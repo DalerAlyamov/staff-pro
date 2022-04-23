@@ -4,8 +4,10 @@ const template = Object.freeze(
   })
 );
 
-export const modals = Object.freeze(
+const modalKeys = Object.freeze(
   Object.seal({
     template,
   })
 );
+
+export default modalKeys;

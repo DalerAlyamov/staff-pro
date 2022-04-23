@@ -10,9 +10,11 @@ const app = Object.freeze(
   })
 );
 
-export const pageNames = Object.freeze(
+const pageNames = Object.freeze(
   Object.seal({
     auth,
     app,
   })
 );
+
+export default pageNames;

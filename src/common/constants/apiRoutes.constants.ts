@@ -4,8 +4,10 @@ const template = Object.freeze(
   })
 );
 
-export const url = Object.freeze(
+const apiRoutes = Object.freeze(
   Object.seal({
-    template
+    template,
   })
 );
+
+export default apiRoutes;

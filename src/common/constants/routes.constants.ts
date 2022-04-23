@@ -10,9 +10,11 @@ const app = Object.freeze(
   })
 );
 
-export const paths = Object.freeze(
+const routes = Object.freeze(
   Object.seal({
     auth,
     app,
   })
 );
+
+export default routes;

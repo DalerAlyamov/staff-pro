@@ -8,6 +8,6 @@ const Home = React.lazy(() =>
 
 export const App = Object.freeze(
   Object.seal({
-    Home
+    Home,
   })
-)
+);

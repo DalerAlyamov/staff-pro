@@ -1,6 +1,8 @@
 import * as i from "@interfaces";
 
-export const VisibilityIcon: React.FC<i.icon> = ({ size = 24 }): JSX.Element => (
+export const VisibilityIcon: React.FC<i.icon> = ({
+  size = 24,
+}): JSX.Element => (
   <svg
     viewBox="0 0 24 24"
     style={{ width: size + "px", height: size + "px" }}

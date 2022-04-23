@@ -1,13 +1,13 @@
-import { createRoot } from 'react-dom/client';
+import { createRoot } from "react-dom/client";
 import { ToastContainer } from "react-toastify";
 import { Provider } from "react-redux";
 
-import { Routes } from "@routes";
 import Components from "@components";
+import { Routes } from "@routes";
 import { store } from "@store";
 import { CustomRouter } from "@utilities/customRouter.utility";
 
-import '@styles/global.scss'
+import "@styles/global.scss";
 
 const app = (
   <Provider store={store}>

@@ -1,7 +1,7 @@
 import Cookie from "js-cookie";
 import axios, { AxiosError, AxiosResponse, AxiosRequestConfig } from "axios";
 import { baseURL } from "@utilities/baseUrl.utility";
-import { LSTokenName } from '@utilities/locastorage.utility';
+import { LSTokenName } from "@utilities/locastorage.utility";
 import { upperToLowerCase } from "@functions";
 
 const instance = axios.create({

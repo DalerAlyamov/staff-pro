@@ -7,7 +7,10 @@ const templateSlice = createSlice({
   name: "templateSlice",
   initialState,
   reducers: {
-    initCommittee(state: i.template, { payload }: PayloadAction<i.template[]>) {},
+    initCommittee(
+      state: i.template,
+      { payload }: PayloadAction<i.template[]>
+    ) {},
   },
 });
 

@@ -6,14 +6,14 @@ import Page from "./page.component";
 import Skeleton from "./skeleton.component";
 
 const Components = Object.freeze(
-	Object.seal({
-		Link,
-		If,
-		Loading,
-		ModalContainer,
-		Page,
-		Skeleton
-	})
-)
+  Object.seal({
+    Link,
+    If,
+    Loading,
+    ModalContainer,
+    Page,
+    Skeleton,
+  })
+);
 
 export default Components;
