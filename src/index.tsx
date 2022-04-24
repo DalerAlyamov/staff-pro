@@ -3,8 +3,8 @@ import { ToastContainer } from "react-toastify";
 import { Provider } from "react-redux";
 
 import Components from "@components";
-import { Routes } from "@routes";
-import { store } from "@store";
+import { Routes } from "common/routes";
+import { store } from "@redux";
 import { CustomRouter } from "@utilities/customRouter.utility";
 
 import "@styles/global.scss";

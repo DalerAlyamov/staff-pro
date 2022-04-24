@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const LogotypeIcon: React.FC<i.icon> = ({ size = 1 }): JSX.Element => (
+export const LogotypeIcon: React.FC<i.Icon> = ({ size = 1 }): JSX.Element => (
   <svg
     width={size * 35}
     height={size * 46}

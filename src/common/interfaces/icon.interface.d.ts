@@ -1,3 +1,3 @@
-export interface icon {
-  size: number;
+export interface Icon {
+  size: number | undefined;
 }

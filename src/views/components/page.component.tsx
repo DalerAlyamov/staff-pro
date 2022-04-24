@@ -5,16 +5,16 @@ interface IProps extends React.HTMLAttributes<HTMLDivElement> {
   children?: React.ReactNode;
 }
 
-const Page: React.FC<IProps> = ({ title, children }): JSX.Element => {
+const Page: React.FC<IProps> = (props): JSX.Element => {
   React.useEffect(() => {
     const prevTitle: string = document.title;
-    document.title = title;
+    document.title = props.title;
     return () => {
       document.title = prevTitle;
     };
-  }, [title]);
+  }, [props.title]);
 
-  return <React.Fragment>{children}</React.Fragment>;
+  return <React.Fragment>{props.children}</React.Fragment>;
 };
 
 export default Page;

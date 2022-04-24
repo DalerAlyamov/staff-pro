@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const IndeterminateCheckBoxIcon: React.FC<i.icon> = ({
+export const IndeterminateCheckBoxIcon: React.FC<i.Icon> = ({
   size = 24,
 }): JSX.Element => (
   <svg

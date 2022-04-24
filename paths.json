@@ -3,18 +3,20 @@
     "paths": {
       "@styles/*": ["./styles/*"],
       "@pages": ["./views/pages"],
+      "@pages/*": ["./views/pages/*"],
       "@components": ["./views/components"],
       "@layouts": ["./views/layouts"],
       "@icons": ["./views/icons"],
-      "@routes": ["./routes"],
+      "@routes": ["./common/routes"],
+      "@routes/*": ["./common/routes/*"],
       "@constants": ["./common/constants"],
       "@services": ["./common/services"],
       "@functions": ["./common/functions"],
       "@interfaces": ["./common/interfaces"],
       "@validations": ["./common/validations"],
       "@api": ["./common/api"],
-      "@store": ["./common/store"],
-      "@store/*": ["./common/store/*"],
+      "@redux": ["./common/redux"],
+      "@redux/*": ["./common/redux/*"],
       "@utilities/*": ["./common/utilities/*"],
       "@assets/*": ["./assets/*"]
     }

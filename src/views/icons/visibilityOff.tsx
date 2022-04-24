@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const VisibilityOffIcon: React.FC<i.icon> = ({
+export const VisibilityOffIcon: React.FC<i.Icon> = ({
   size = 24,
 }): JSX.Element => (
   <svg

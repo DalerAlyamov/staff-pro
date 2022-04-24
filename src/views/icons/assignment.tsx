@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const AssignmentIcon: React.FC<i.icon> = ({
+export const AssignmentIcon: React.FC<i.Icon> = ({
   size = 24,
 }): JSX.Element => (
   <svg

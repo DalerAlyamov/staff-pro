@@ -1,8 +1,8 @@
 import * as i from "@interfaces";
-import { AppDispatch } from "@store";
+import { AppDispatch } from "@redux";
 
 const temp =
-  (body: i.template): any =>
+  (body: any): any =>
   async (dispatch: AppDispatch) => {
     try {
     } finally {

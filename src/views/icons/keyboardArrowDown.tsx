@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const KeyboardArrowDownIcon: React.FC<i.icon> = ({
+export const KeyboardArrowDownIcon: React.FC<i.Icon> = ({
   size = 24,
 }): JSX.Element => (
   <svg

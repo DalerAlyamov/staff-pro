@@ -1,13 +1,13 @@
-import { useAppSelector } from "@store";
+import { useAppSelector } from "@redux";
 import constants from "@constants";
 import { Template } from "views/modals";
 
 const ModalContainer: React.FC = (): JSX.Element => {
-  const { modalKey, modalProps } = useAppSelector((state) => state.modal);
+  const { key, props } = useAppSelector((state) => state.modal);
 
-  switch (modalKey) {
-    case constants.modalKeys.template:
-      return <Template {...modalProps} />;
+  switch (key) {
+    case constants.modalKeys.sendLinkForResetPassword:
+      return <Template {...props} />;
     default:
       return <></>;
   }

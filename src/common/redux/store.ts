@@ -1,7 +1,7 @@
 import { configureStore } from "@reduxjs/toolkit";
 
-import { modalReducer as modal } from "@store/slice/modal.slice";
-import { templateReducer as template } from "@store/slice/template.slice";
+import { modalReducer as modal } from "@redux/slice/modal.slice";
+import { userReducer as user } from "@redux/slice/user.slice";
 
 import { LSStatesName } from "@utilities/locastorage.utility";
 
@@ -19,7 +19,7 @@ export const store = configureStore({
   devTools: true,
   reducer: {
     modal,
-    template,
+    user,
   },
   preloadedState: loadState(),
 });
@@ -29,7 +29,7 @@ store.subscribe(() => {
   localStorage.setItem(
     LSStatesName,
     JSON.stringify({
-      template: state.template,
+      user: state.user,
     })
   );
 });
