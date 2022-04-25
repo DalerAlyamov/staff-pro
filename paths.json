@@ -6,6 +6,7 @@
       "@pages/*": ["./views/pages/*"],
       "@components": ["./views/components"],
       "@layouts": ["./views/layouts"],
+      "@layouts/*": ["./views/layouts/*"],
       "@icons": ["./views/icons"],
       "@routes": ["./common/routes"],
       "@routes/*": ["./common/routes/*"],

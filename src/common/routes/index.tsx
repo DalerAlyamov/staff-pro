@@ -1,11 +1,13 @@
 import React from "react";
-import RouteList from "@routes/routes";
+import Routes from "@routes/routes";
 import { RouteController } from "@routes/route.controller";
 
-export const Routes: React.FC = () => {
+const AppRoutes: React.FC = () => {
   return (
     <RouteController>
-      <RouteList />
+      <Routes />
     </RouteController>
   );
 };
+
+export default AppRoutes;

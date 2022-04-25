@@ -8,7 +8,7 @@ interface iProps {
 
 const Link: React.FC<iProps> = (props): JSX.Element => {
   return (
-    <MyLink to={props.to} className={props.className}>
+    <MyLink draggable={false} to={props.to} className={props.className}>
       {props.children}
     </MyLink>
   );

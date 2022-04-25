@@ -1,5 +1,6 @@
 import { FC } from "react";
 import ContentLoader from "react-content-loader";
+
 interface IProps {
   width?: number | string;
   height?: number | string;

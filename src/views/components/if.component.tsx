@@ -1,14 +1,16 @@
 import React from "react";
 
-const If: React.FC<{
+interface IProps {
   condition: boolean | undefined;
   anotherChildren?: React.ReactNode;
   children: React.ReactNode;
-}> = React.memo(({ condition, anotherChildren, children }) => {
-  if (!condition) {
-    return <>{anotherChildren ? anotherChildren : null}</>;
+}
+
+const If: React.FC<IProps> = React.memo((props) => {
+  if (!props.condition) {
+    return <>{props.anotherChildren ? props.anotherChildren : null}</>;
   }
-  return <>{children}</>;
+  return <>{props.children}</>;
 });
 
 export default If;
