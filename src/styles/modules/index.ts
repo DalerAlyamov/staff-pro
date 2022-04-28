@@ -4,6 +4,7 @@ import checkbox from "./checkbox.module.scss";
 import checkboxButton from "./checkboxButton.module.scss";
 import radioButton from "./radioButton.module.scss";
 import radio from "./radio.module.scss";
+import navigation from "./navigation.module.scss";
 
 const styles = Object.freeze(
   Object.seal({
@@ -12,7 +13,8 @@ const styles = Object.freeze(
     checkbox,
     checkboxButton,
     radioButton,
-    radio
+    radio,
+    navigation
   })
 );
 

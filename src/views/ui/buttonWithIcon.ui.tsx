@@ -8,9 +8,10 @@ interface IProps {
   children: React.ReactNode;
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   side?: "left" | "right";
+  icon: React.ReactNode;
 }
 
-const ButtonWithArrow: React.FC<IProps> = (props): JSX.Element => {
+const ButtonWithIcon: React.FC<IProps> = (props): JSX.Element => {
   return (
     <UI.Button
       onClick={props.onClick}
@@ -18,15 +19,15 @@ const ButtonWithArrow: React.FC<IProps> = (props): JSX.Element => {
       className={styles.exitButton.root}
     >
       <div className={styles.exitButton.wrap}>
-        <Component.If condition={props.side === "left"}>
+        <Component.If condition={props.side !== "right"}>
           <div className={styles.exitButton.icon}>
-            <Icon.KeyboardArrowLeft size={24} />
+            {props.icon}
           </div>
         </Component.If>
         {props.children}
         <Component.If condition={props.side === "right"}>
           <div className={styles.exitButton.icon}>
-            <Icon.KeyboardArrowRight size={24} />
+            {props.icon}
           </div>
         </Component.If>
       </div>
@@ -34,4 +35,4 @@ const ButtonWithArrow: React.FC<IProps> = (props): JSX.Element => {
   );
 };
 
-export default ButtonWithArrow;
+export default ButtonWithIcon;

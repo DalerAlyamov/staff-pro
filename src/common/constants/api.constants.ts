@@ -4,10 +4,10 @@ const template = Object.freeze(
   })
 );
 
-const apiRoutes = Object.freeze(
+const api = Object.freeze(
   Object.seal({
     template,
   })
 );
 
-export default apiRoutes;
+export default api;

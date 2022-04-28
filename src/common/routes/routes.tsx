@@ -35,14 +35,17 @@ const Routes: React.FC = () => {
 
         {/* 2. приложение */}
         <Route path={constants.routes.app.home} element={<Layouts.AppLayout />}>
-          {/* 1. список заявок | 2. список моих заявок */}
-          <Route path={constants.routes.app.applications}>
-            <Route index element={<RouteList.App.Applications />} />
-            <Route
-              path={constants.routes.app.myApplications}
-              element={<RouteList.App.MyApplications />}
-            />
-          </Route>
+          {/* 1. список заявок */}
+          <Route
+            path={constants.routes.app.applications}
+            element={<RouteList.App.Applications />}
+          />
+          
+          {/* 2. список моих заявок */}
+          <Route
+            path={constants.routes.app.myApplications}
+            element={<RouteList.App.MyApplications />}
+          />
 
           {/* 3. список командировок | 4. командировка (создание/редактирование/просмотр) */}
           <Route path={constants.routes.app.businessTrips}>
@@ -79,15 +82,6 @@ const Routes: React.FC = () => {
             path={constants.routes.app.notifications}
             element={<RouteList.App.Notifications />}
           />
-
-          {/* 11. список больничных | 12. больничаня (создание/редактирование/просмотр) */}
-          <Route path={constants.routes.app.sickLeaveList}>
-            <Route index element={<RouteList.App.SickLeaveList />} />
-            <Route
-              path={constants.routes.app.sickLeave + ":id"}
-              element={<RouteList.App.SickLeave />}
-            />
-          </Route>
 
           {/* 13. 404 в приложении */}
           <Route path="*" element={<>404 в приложении</>} />

@@ -1,16 +1,18 @@
 import routes from "./routes.constants";
-import apiRoutes from "./apiRoutes.constants";
+import api from "./api.constants";
 import modalKeys from "./modalKeys.constants";
 import pageNames from "./pageNames.constants";
-import userRankList from "./userRankList.constants";
+import userTypeList from "./userTypeList.constants";
+import navigationList from "./navigationList.constants";
 
 const constants = Object.freeze(
   Object.seal({
     routes,
-    apiRoutes,
+    api,
     modalKeys,
     pageNames,
-    userRankList
+    userTypeList,
+    navigationList
   })
 );
 

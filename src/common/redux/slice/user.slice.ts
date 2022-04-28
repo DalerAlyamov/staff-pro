@@ -6,10 +6,11 @@ const initialState: i.User = {
   name: undefined,
   email: undefined,
   rank: undefined,
+  type: undefined,
 };
 
 const userSlice = createSlice({
-  name: "templateSlice",
+  name: "userSlice",
   initialState,
   reducers: {
     initUser(state: i.User, { payload }: PayloadAction<i.User>) {
@@ -17,12 +18,14 @@ const userSlice = createSlice({
       state.name = payload.name;
       state.email = payload.email;
       state.rank = payload.rank;
+      state.type = payload.type;
     },
     deInitUser(state: i.User) {
       state.id = undefined;
       state.name = undefined;
       state.email = undefined;
       state.rank = undefined;
+      state.type = undefined;
     },
   },
 });

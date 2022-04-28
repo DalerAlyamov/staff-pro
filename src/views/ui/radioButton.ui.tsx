@@ -12,10 +12,6 @@ interface IProps {
 const RadioButton: React.FC<IProps> = (props): JSX.Element => {
 
   const [checked, setChecked] = React.useState<boolean | undefined>(props.checked);
-  
-  const className = classNames(
-    styles.radioButton.root
-  )
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     setChecked(!checked);
@@ -29,7 +25,7 @@ const RadioButton: React.FC<IProps> = (props): JSX.Element => {
   }, [props.checked]);
 
   return (
-    <button className={className} onClick={handleClick}>
+    <button className={styles.radioButton.root} onClick={handleClick}>
 
       <div className={styles.radioButton.text}>
         {props.children}

@@ -12,10 +12,6 @@ interface IProps {
 const CheckboxButton: React.FC<IProps> = (props): JSX.Element => {
 
   const [checked, setChecked] = React.useState<boolean | undefined>(props.checked);
-  
-  const className = classNames(
-    styles.checkboxButton.root
-  )
 
   const handleClick = (e: React.MouseEvent<HTMLButtonElement>) => {
     setChecked(!checked);
@@ -29,7 +25,7 @@ const CheckboxButton: React.FC<IProps> = (props): JSX.Element => {
   }, [props.checked]);
 
   return (
-    <button className={className} onClick={handleClick}>
+    <button className={styles.checkboxButton.root} onClick={handleClick}>
       
       <UI.Checkbox checked={checked} />
 

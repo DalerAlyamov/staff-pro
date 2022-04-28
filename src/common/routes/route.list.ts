@@ -57,14 +57,6 @@ const Notifications = React.lazy(() =>
   import("@pages").then(({ Notifications }) => ({ default: Notifications }))
 );
 
-const SickLeave = React.lazy(() =>
-  import("@pages").then(({ SickLeave }) => ({ default: SickLeave }))
-);
-
-const SickLeaveList = React.lazy(() =>
-  import("@pages").then(({ SickLeaveList }) => ({ default: SickLeaveList }))
-);
-
 const Auth = Object.freeze(
   Object.seal({
     ChangePassword,
@@ -85,8 +77,6 @@ const App = Object.freeze(
     Home,
     MyApplications,
     Notifications,
-    SickLeave,
-    SickLeaveList
   })
 );
 

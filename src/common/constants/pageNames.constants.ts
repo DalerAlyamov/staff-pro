@@ -13,13 +13,12 @@ const app = Object.freeze(
     businessTrip: (name: string) => `${name} | Командировка`, 
     holidays: "Отпуска", 
     holiday: (name: string) => `${name} | Отпуск`, 
-    sickLeaveList: "Больничные", 
-    sickLeave: (name: string) => `${name} | Больничный`, 
     notifications: "Уведомления", 
     employees: "Сотрудники", 
     employee: (name: string) => `${name} | Сотрудник`, 
     applications: "Заявки", 
     myApplications: "Мои заявки", 
+    templates: "Шаблоны",
   })
 );
 

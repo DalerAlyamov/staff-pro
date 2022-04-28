@@ -2,7 +2,6 @@ const sendLinkForResetPassword = "SEND_LINK_FOR_RESET_PASSWORD";
 
 const requestCreate = "REQUEST_CREATE";
 const requestDeleted = "REQUEST_DELETED";
-const sickLeaveCompleted = "SICK_LEAVE_COMPLETED";
 const businessTripCompleted = "BUSINESS_TRIP_COMPLETED";
 
 const confirm = Object.freeze(
@@ -23,7 +22,6 @@ const modalKeys = Object.freeze(
     sendLinkForResetPassword,
     requestCreate,
     requestDeleted,
-    sickLeaveCompleted,
     businessTripCompleted,
     confirm
   })

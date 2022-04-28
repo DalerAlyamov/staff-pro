@@ -1,0 +1,23 @@
+@import '../colors';
+
+.root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+}
+
+.item {
+	padding: 8px 16px;
+	border-radius: 50px;
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: rgba($dark-blue, 0.6);
+	transition: 100ms linear;
+}
+
+.item.active {
+	background: $white;
+	box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.08);
+	color: $dark-blue;
+}

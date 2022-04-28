@@ -17,7 +17,7 @@ const app = Object.freeze(
     applications: "/applications",
 
     // список моих заявок
-    myApplications: "/applications/my",
+    myApplications: "/my-applications",
 
     // командировка (создание/редактирование/просмотр)
     businessTrip: "/business-trips/",
@@ -43,11 +43,8 @@ const app = Object.freeze(
     // список уведомлений
     notifications: "/notifications",
 
-    // больничаня (создание/редактирование/просмотр)
-    sickLeave: "/sick-leave/",
-
-    // список больничных
-    sickLeaveList: "/sick-leave",
+    // шаблоны
+    templates: "/templates",
   })
 );
 
