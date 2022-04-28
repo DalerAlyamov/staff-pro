@@ -2,7 +2,7 @@ import React from "react";
 import styles from "@styles/modules";
 import classNames from "classnames";
 import { RippleEffect } from "daler-react-ripple-effect";
-import Components from "@components";
+import Component from "@components";
 
 interface IProps {
   children: React.ReactNode;
@@ -29,7 +29,7 @@ const Button: React.FC<IProps> = (props): JSX.Element => {
   );
 
   return (
-    <Components.If
+    <Component.If
       condition={!props.disabled}
       anotherChildren={<div className={className}>{props.children}</div>}
     >
@@ -46,7 +46,7 @@ const Button: React.FC<IProps> = (props): JSX.Element => {
           {props.children}
         </RippleEffect>
       </button>
-    </Components.If>
+    </Component.If>
   );
 };
 

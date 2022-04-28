@@ -5,7 +5,7 @@ import ModalContainer from "./modalContainer.component";
 import Page from "./page.component";
 import Skeleton from "./skeleton.component";
 
-const Components = Object.freeze(
+const Component = Object.freeze(
   Object.seal({
     Link,
     If,
@@ -16,4 +16,4 @@ const Components = Object.freeze(
   })
 );
 
-export default Components;
+export default Component;

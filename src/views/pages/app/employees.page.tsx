@@ -1,11 +1,11 @@
 import React from "react";
-import Components from "@components";
+import Component from "@components";
 import constants from "@constants";
 
 export const Employees: React.FC = (): JSX.Element => {
   return (
-    <Components.Page
+    <Component.Page
       title={constants.pageNames.app.employees}
-    ></Components.Page>
+    ></Component.Page>
   );
 };

@@ -1,6 +1,6 @@
 import React from "react";
 import classNames from "classnames";
-import Components from "@components";
+import Component from "@components";
 import Icon from "@icons";
 import styles from "@styles/modules";
 
@@ -16,12 +16,12 @@ const Checkbox: React.FC<IProps> = (props): JSX.Element => {
 
   return (
     <div className={className}>
-      <Components.If
+      <Component.If
         anotherChildren={<Icon.CheckBoxOutlineBlank size={26} />}
         condition={props.checked}
       >
         <Icon.CheckBox size={26} />
-      </Components.If>
+      </Component.If>
     </div>
   );
 };

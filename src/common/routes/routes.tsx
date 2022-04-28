@@ -1,13 +1,13 @@
 import React from "react";
 import { Route, Routes as ReactRouterRoutes } from "react-router-dom";
 import constants from "@constants";
-import Components from "@components";
+import Component from "@components";
 import RouteList from "@routes/route.list";
 import Layouts from "@layouts";
 
 const Routes: React.FC = () => {
   return (
-    <React.Suspense fallback={<Components.Loading />}>
+    <React.Suspense fallback={<Component.Loading />}>
       <ReactRouterRoutes>
         {/* 1. авторизация */}
         <Route

@@ -1,11 +1,11 @@
 import React from "react";
-import Components from "@components";
+import Component from "@components";
 import constants from "@constants";
 import UI from '@ui';
 
 export const Home: React.FC = (): JSX.Element => {
   return (
-    <Components.Page title={constants.pageNames.app.home}>
+    <Component.Page title={constants.pageNames.app.home}>
 
       <div className="testtest">
         <UI.RadioButton>
@@ -13,6 +13,6 @@ export const Home: React.FC = (): JSX.Element => {
         </UI.RadioButton>
       </div>
 
-    </Components.Page>
+    </Component.Page>
   );
 };
