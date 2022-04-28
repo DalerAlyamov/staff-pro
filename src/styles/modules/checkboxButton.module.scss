@@ -1,0 +1,14 @@
+@import '../colors';
+
+.root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 4px;
+}
+
+.text {
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: $dark-gray;
+}

@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const BannerIcon: React.FC<i.Icon> = ({ size = 24 }): JSX.Element => (
+const BannerIcon: React.FC<i.Icon> = ({ size = 24 }): JSX.Element => (
   <svg
     viewBox="0 0 24 24"
     style={{ width: size + "px", height: size + "px" }}
@@ -12,3 +12,5 @@ export const BannerIcon: React.FC<i.Icon> = ({ size = 24 }): JSX.Element => (
     />
   </svg>
 );
+
+export default BannerIcon;

@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const RadioButtonUncheckedIcon: React.FC<i.Icon> = ({
+const RadioButtonUncheckedIcon: React.FC<i.Icon> = ({
   size = 24,
 }): JSX.Element => (
   <svg
@@ -14,3 +14,5 @@ export const RadioButtonUncheckedIcon: React.FC<i.Icon> = ({
     />
   </svg>
 );
+
+export default RadioButtonUncheckedIcon;

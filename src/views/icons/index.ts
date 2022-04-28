@@ -1,43 +1,91 @@
-export * from "./folderSpecial";
-export * from "./category";
-export * from "./brands";
-export * from "./banner";
-export * from "./machine";
-export * from "./users";
-export * from "./search";
-export * from "./firstPage";
-export * from "./keyboardArrowLeft";
-export * from "./keyboardArrowRight";
-export * from "./keyboardArrowDown";
-export * from "./keyboardDown";
-export * from "./lastPage";
-export * from "./visibility";
-export * from "./visibilityOff";
-export * from "./info";
-export * from "./arrowDropTop";
-export * from "./arrowDropDown";
-export * from "./close";
-export * from "./saveAlt";
-export * from "./radioButtonUnchecked";
-export * from "./radioButtonChecked";
-export * from "./indeterminateCheckBox";
-export * from "./checkBox";
-export * from "./checkBoxOutlineBlank";
-export * from "./checkCircle";
-export * from "./cancel";
-export * from "./logotype";
-export * from "./addCircle";
-export * from "./archive";
-export * from "./contactMail";
-export * from "./people";
-export * from "./assignment";
-export * from "./assignmentInd";
-export * from "./delete";
-export * from "./filterList";
-export * from "./saveAlt";
-export * from "./notifications";
-export * from "./save";
-export * from "./edit";
-export * from "./supervisorAccount";
-export * from "./person";
-export * from "./send";
+import FolderSpecial from "./folderSpecial";
+import Category from "./category";
+import Brands from "./brands";
+import Banner from "./banner";
+import Machine from "./machine";
+import Users from "./users";
+import Search from "./search";
+import FirstPage from "./firstPage";
+import KeyboardArrowLeft from "./keyboardArrowLeft";
+import KeyboardArrowRight from "./keyboardArrowRight";
+import KeyboardArrowDown from "./keyboardArrowDown";
+import KeyboardDown from "./keyboardDown";
+import LastPage from "./lastPage";
+import Visibility from "./visibility";
+import VisibilityOff from "./visibilityOff";
+import Info from "./info";
+import ArrowDropTop from "./arrowDropTop";
+import ArrowDropDown from "./arrowDropDown";
+import Close from "./close";
+import SaveAlt from "./saveAlt";
+import RadioButtonUnchecked from "./radioButtonUnchecked";
+import RadioButtonChecked from "./radioButtonChecked";
+import IndeterminateCheckBox from "./indeterminateCheckBox";
+import CheckBox from "./checkBox";
+import CheckBoxOutlineBlank from "./checkBoxOutlineBlank";
+import CheckCircle from "./checkCircle";
+import Cancel from "./cancel";
+import Logotype from "./logotype";
+import AddCircle from "./addCircle";
+import Archive from "./archive";
+import ContactMail from "./contactMail";
+import People from "./people";
+import Assignment from "./assignment";
+import AssignmentInd from "./assignmentInd";
+import Delete from "./delete";
+import FilterList from "./filterList";
+import Notifications from "./notifications";
+import Save from "./save";
+import Edit from "./edit";
+import SupervisorAccount from "./supervisorAccount";
+import Person from "./person";
+import Send from "./send";
+
+const Icon = Object.freeze(
+  Object.seal({
+    FolderSpecial,
+    Category,
+    Brands,
+    Banner,
+    Machine,
+    Users,
+    Search,
+    FirstPage,
+    KeyboardArrowLeft,
+    KeyboardArrowRight,
+    KeyboardArrowDown,
+    KeyboardDown,
+    LastPage,
+    Visibility,
+    VisibilityOff,
+    Info,
+    ArrowDropTop,
+    ArrowDropDown,
+    Close,
+    SaveAlt,
+    RadioButtonUnchecked,
+    RadioButtonChecked,
+    IndeterminateCheckBox,
+    CheckBox,
+    CheckBoxOutlineBlank,
+    CheckCircle,
+    Cancel,
+    Logotype,
+    AddCircle,
+    Archive,
+    ContactMail,
+    People,
+    Assignment,
+    AssignmentInd,
+    Delete,
+    FilterList,
+    Notifications,
+    Save,
+    Edit,
+    SupervisorAccount,
+    Person,
+    Send,
+  })
+);
+
+export default Icon;

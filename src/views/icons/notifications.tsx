@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const NotificationsIcon: React.FC<i.Icon> = ({
+const NotificationsIcon: React.FC<i.Icon> = ({
   size = 24,
 }): JSX.Element => (
   <svg
@@ -14,3 +14,5 @@ export const NotificationsIcon: React.FC<i.Icon> = ({
     />
   </svg>
 );
+
+export default NotificationsIcon;

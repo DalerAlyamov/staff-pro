@@ -5,6 +5,7 @@
       "@pages": ["./views/pages"],
       "@pages/*": ["./views/pages/*"],
       "@components": ["./views/components"],
+      "@ui": ["./views/ui"],
       "@layouts": ["./views/layouts"],
       "@layouts/*": ["./views/layouts/*"],
       "@icons": ["./views/icons"],

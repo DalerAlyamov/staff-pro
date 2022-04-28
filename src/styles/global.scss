@@ -37,6 +37,7 @@
 button,
 button * {
   cursor: pointer;
+  font-size: initial;
 }
 
 .testtest {
@@ -44,13 +45,4 @@ button * {
   display: flex;
   align-items: center;
   justify-content: center;
-}
-
-.test {
-  border-radius: 50px;
-  button {
-    cursor: pointer;
-    padding: 20px 56px;
-    font-size: 1.25rem;
-  }
 }

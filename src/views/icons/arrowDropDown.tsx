@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const ArrowDropDownIcon: React.FC<i.Icon> = ({
+const ArrowDropDownIcon: React.FC<i.Icon> = ({
   size = 24,
 }): JSX.Element => (
   <svg
@@ -11,3 +11,5 @@ export const ArrowDropDownIcon: React.FC<i.Icon> = ({
     <path fill="currentColor" d="M7 10L12 15L17 10L7 10Z" />
   </svg>
 );
+
+export default ArrowDropDownIcon;

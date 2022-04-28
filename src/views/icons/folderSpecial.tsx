@@ -1,6 +1,6 @@
 import * as i from "@interfaces";
 
-export const FolderSpecialIcon: React.FC<i.Icon> = ({
+const FolderSpecialIcon: React.FC<i.Icon> = ({
   size = 24,
 }): JSX.Element => (
   <svg
@@ -14,3 +14,5 @@ export const FolderSpecialIcon: React.FC<i.Icon> = ({
     />
   </svg>
 );
+
+export default FolderSpecialIcon;

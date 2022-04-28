@@ -1,0 +1,21 @@
+@import '../colors';
+
+.root {
+	padding: 2px;
+	width: 26px;
+	height: 26px;
+}
+
+.circle {
+	width: 100%;
+	height: 100%;
+	border: 2px solid $dark-blue;
+	transition: 100ms linear;
+	border-radius: 500px;
+}
+
+.checked {
+	.circle {
+		border: 8px solid $dark-blue;
+	}
+}

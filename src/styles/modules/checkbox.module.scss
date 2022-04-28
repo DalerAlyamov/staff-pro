@@ -1,0 +1,14 @@
+@import '../colors';
+
+.root {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	color: $dark-blue;
+	opacity: 0.3;
+	transition: 100ms linear;
+}
+
+.checked {
+	opacity: 1;
+}

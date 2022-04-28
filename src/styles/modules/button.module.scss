@@ -1,0 +1,28 @@
+@import '../colors';
+
+.root {
+	padding: 16px 36px;
+	border-radius: 8px;
+	font-size: 1.125rem;
+	font-weight: 500;
+	border: 1px solid transparent;
+	transition: 100ms linear;
+}
+
+.__disabled {
+	opacity: 0.5;
+	pointer-events: none;
+	user-select: none
+}
+
+.__type__contained {
+	background-color: $dark-blue;
+	color: $white;
+	border: none;
+}
+
+.__type__outlined {
+	background-color: $white;
+	color: $dark-blue;
+	border-color: $dark-blue;
+}
