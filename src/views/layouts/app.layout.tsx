@@ -6,7 +6,7 @@ const AppLayout: React.FC = (): JSX.Element => {
   return (
     <>
       <div className="testtest">
-        <Component.Navigation />
+        <Component.Notifications />
       </div>
       <Outlet />
     </>

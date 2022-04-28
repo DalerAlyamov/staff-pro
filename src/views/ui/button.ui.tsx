@@ -10,6 +10,7 @@ interface IProps {
   disabled?: boolean;
   color?: string | undefined;
   className?: string; 
+  size?: "small" | "medium" | "large";
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onMouseDown?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onMouseUp?: (e: React.MouseEvent<HTMLButtonElement>) => void;
@@ -24,6 +25,9 @@ const Button: React.FC<IProps> = (props): JSX.Element => {
     props.className,
     styles.button.root,
     props.disabled && styles.button.__disabled,
+    props.size === "small" && styles.button.__size__small,
+    // props.size === "medium" && styles.button.__size__medium,
+    // props.size === "large" && styles.button.__size__large,
     props.type === "contained" && styles.button.__type__contained,
     props.type === "outlined" && styles.button.__type__outlined
   );

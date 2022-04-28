@@ -15,10 +15,14 @@
 	user-select: none
 }
 
+.__size__small {
+	padding: 8px 8px;
+}
+
 .__type__contained {
-	background-color: $dark-blue;
-	color: $white;
-	border: none;
+		background-color: $dark-blue;
+		color: $white;
+		border: none;
 }
 
 .__type__outlined {
