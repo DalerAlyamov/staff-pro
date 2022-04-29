@@ -31,7 +31,7 @@ const Navigation: React.FC = (): JSX.Element => {
       default: 
         setNavigationList([]);
     }
-  }, [user.type])
+  }, [user.data?.type])
 
   return (
     <div className={styles.navigation.root}>

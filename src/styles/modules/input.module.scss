@@ -1,0 +1,56 @@
+@import '../colors';
+
+.root {
+	position: relative;
+	height: 52px;
+	width: 428px;
+}
+
+.input {
+	background: $light-grayish-blue;
+	height: 100%;
+	width: 100%;
+	color: $dark-blue;
+	font-size: 1.125rem;
+	font-weight: 500;
+	line-height: 125%;
+	padding: 25px 16px 16px 16px;
+	border-radius: 8px;
+}
+
+.placeholder {
+	color: $dark-blue;
+	opacity: 0.4;
+	font-weight: 400;
+	line-height: 17px;
+	position: absolute;
+	left: 16px;
+	top: 17px;
+	transition: 70ms linear;
+	pointer-events: none;
+	font-size: 1.125rem;
+}
+
+.eye {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	position: absolute;
+	right: 16px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: $dark-gray;
+}
+
+.__active {
+	.placeholder {
+		font-size: 0.875rem;
+		top: 5px;
+	}
+}
+
+.__hasEye {
+	.input {
+		padding-right: 56px;
+	}
+}

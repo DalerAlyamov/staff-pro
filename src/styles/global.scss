@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap");
+@import './colors';
 
 * {
   margin: 0;
@@ -33,7 +34,7 @@ body {
 }
 
 .container {
-  max-width: 1215px;
+  max-width: 1280px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -42,6 +43,123 @@ button,
 button * {
   cursor: pointer;
   font-size: initial;
+}
+
+.w100p {
+  width: 100% !important;
+}
+
+.m {
+  &t {
+    &-1 {
+      margin-top: 10px;
+    }
+    &-2 {
+      margin-top: 20px;
+    }
+    &-3 {
+      margin-top: 30px;
+    }
+    &-4 {
+      margin-top: 40px;
+    }
+    &-5 {
+      margin-top: 50px;
+    }
+    &-6 {
+      margin-top: 60px;
+    }
+    &-7 {
+      margin-top: 70px;
+    }
+    &-8 {
+      margin-top: 80px;
+    }
+  }
+  &r {
+    &-1 {
+      margin-right: 10px;
+    }
+    &-2 {
+      margin-right: 20px;
+    }
+    &-3 {
+      margin-right: 30px;
+    }
+    &-4 {
+      margin-right: 40px;
+    }
+    &-5 {
+      margin-right: 50px;
+    }
+    &-6 {
+      margin-right: 60px;
+    }
+    &-7 {
+      margin-right: 70px;
+    }
+    &-8 {
+      margin-right: 80px;
+    }
+  }
+  &b {
+    &-1 {
+      margin-bottom: 10px;
+    }
+    &-2 {
+      margin-bottom: 20px;
+    }
+    &-3 {
+      margin-bottom: 30px;
+    }
+    &-4 {
+      margin-bottom: 40px;
+    }
+    &-5 {
+      margin-bottom: 50px;
+    }
+    &-6 {
+      margin-bottom: 60px;
+    }
+    &-7 {
+      margin-bottom: 70px;
+    }
+    &-8 {
+      margin-bottom: 80px;
+    }
+  }
+  &l {
+    &-1 {
+      margin-left: 10px;
+    }
+    &-2 {
+      margin-left: 20px;
+    }
+    &-3 {
+      margin-left: 30px;
+    }
+    &-4 {
+      margin-left: 40px;
+    }
+    &-5 {
+      margin-left: 50px;
+    }
+    &-6 {
+      margin-left: 60px;
+    }
+    &-7 {
+      margin-left: 70px;
+    }
+    &-8 {
+      margin-left: 80px;
+    }
+  }
+}
+
+.lightText {
+  color: $gray;
+  font-size: 0.875rem;
+  font-weight: 400;
 }
 
 .testtest {

@@ -5,5 +5,5 @@ export interface Modal {
 
 export interface ModalOnOpen {
   key: string;
-  props: any;
+  props?: any;
 }

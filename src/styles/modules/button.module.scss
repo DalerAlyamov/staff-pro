@@ -3,10 +3,18 @@
 .root {
 	padding: 16px 36px;
 	border-radius: 8px;
-	font-size: 1.125rem;
 	font-weight: 500;
 	border: 1px solid transparent;
 	transition: 100ms linear;
+	text-align: center;
+	font-size: 1.125rem;
+	div {
+		font-size: 1.125rem;
+	}
+}
+
+.maxWidth {
+	width: 100%;
 }
 
 .__disabled {

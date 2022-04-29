@@ -9,6 +9,7 @@
       "@layouts": ["./views/layouts"],
       "@layouts/*": ["./views/layouts/*"],
       "@icons": ["./views/icons"],
+      "@modals": ["./views/modals"],
       "@routes": ["./common/routes"],
       "@routes/*": ["./common/routes/*"],
       "@constants": ["./common/constants"],

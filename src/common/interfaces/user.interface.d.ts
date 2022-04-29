@@ -1,9 +1,16 @@
 export type UserTypeList = "EMPLOYEE" | "HR" | "ACCOUNTANT" | "DIRECTOR" | "BUYER";
 
-export interface User {
-  id: string | undefined;
-  name: string | undefined;
-  email: string | undefined;
-  rank: string | undefined;
-  type: UserRankList | undefined;
+export interface UserData {
+  id: string;
+  name: string;
+  surname: string;
+  email: string;
+  rank: string;
+  type: UserRankList;
+  avatar: string;
+  vacation_days: number;
+}
+
+export interface UserSlice {
+  data: UserData | undefined;
 }

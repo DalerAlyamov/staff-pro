@@ -8,8 +8,8 @@ const employeeList: i.Navigation[] = [
     path: routes.app.businessTrips,
   },
   {
-    name: pageNames.app.holidays,
-    path: routes.app.holidays,
+    name: pageNames.app.vacations,
+    path: routes.app.vacations,
   },
 ];
 

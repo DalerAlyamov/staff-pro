@@ -3381,10 +3381,10 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.0.11.tgz#d66700c5eacfac1940deb4e3ee5642792d85cd33"
   integrity sha512-sa6P2wJ+CAbgyy4KFssIb/JNMLxFvKF1pCYCSXS8ZMuqZnMsrxqI2E5sPyoTpxoPU/gVZMzr2zjOfg8GIZOMsw==
 
-daler-react-ripple-effect@^0.0.48:
-  version "0.0.48"
-  resolved "https://registry.yarnpkg.com/daler-react-ripple-effect/-/daler-react-ripple-effect-0.0.48.tgz#2169f195be65b42fa1a05044df49dc590ea0eb4a"
-  integrity sha512-3jeQ8Nz6Gdu7KeG+5eL38vLrgCb8GI2/deN+TbIjBS+a1DtADw1J/TIAtkd15TU6laUUZ/TiTXrz4jfkpf/HJQ==
+daler-react-ripple-effect@^0.0.52:
+  version "0.0.52"
+  resolved "https://registry.yarnpkg.com/daler-react-ripple-effect/-/daler-react-ripple-effect-0.0.52.tgz#0cf4847056f7b4dd986ccc3b77112aa3c0e21de1"
+  integrity sha512-Ht4rZvSgNeC5aIDOuWJhebTNXFqDMG8F/a5TE4VFXZVRSK9jBxp2C1CvdKvvHUfdCX1fbS2gd7MMxQtpIK1zWg==
 
 damerau-levenshtein@^1.0.7:
   version "1.0.8"

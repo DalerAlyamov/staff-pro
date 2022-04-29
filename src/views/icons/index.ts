@@ -40,6 +40,7 @@ import Edit from "./edit";
 import SupervisorAccount from "./supervisorAccount";
 import Person from "./person";
 import Send from "./send";
+import Check from "./check";
 
 const Icon = Object.freeze(
   Object.seal({
@@ -85,6 +86,7 @@ const Icon = Object.freeze(
     SupervisorAccount,
     Person,
     Send,
+    Check
   })
 );
 

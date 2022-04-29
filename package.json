@@ -7,7 +7,7 @@
     "@types/js-cookie": "^3.0.2",
     "axios": "^0.26.1",
     "classnames": "^2.3.1",
-    "daler-react-ripple-effect": "^0.0.48",
+    "daler-react-ripple-effect": "^0.0.52",
     "js-cookie": "^3.0.1",
     "react": "^18.0.0",
     "react-content-loader": "^6.2.0",

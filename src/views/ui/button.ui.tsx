@@ -10,6 +10,7 @@ interface IProps {
   disabled?: boolean;
   color?: string | undefined;
   className?: string; 
+  maxWidth?: boolean;
   size?: "small" | "medium" | "large";
   onClick?: (e: React.MouseEvent<HTMLButtonElement>) => void;
   onMouseDown?: (e: React.MouseEvent<HTMLButtonElement>) => void;
@@ -23,6 +24,7 @@ interface IProps {
 const Button: React.FC<IProps> = (props): JSX.Element => {
   const className = classNames(
     props.className,
+    props.maxWidth && styles.button.maxWidth,
     styles.button.root,
     props.disabled && styles.button.__disabled,
     props.size === "small" && styles.button.__size__small,
@@ -45,8 +47,11 @@ const Button: React.FC<IProps> = (props): JSX.Element => {
         onMouseMove={props.onMouseMove}
         onMouseEnter={props.onMouseEnter}
         onClick={props.onClick}
+        style={{
+          width: props.maxWidth ? "100%" : "auto",
+        }}
       >
-        <RippleEffect color={props.color || "#7D8CFF"} className={className}>
+        <RippleEffect color={props.color || (props.type === "outlined" ? "#B8C0FF" : "#7D8CFF")} className={className}>
           {props.children}
         </RippleEffect>
       </button>

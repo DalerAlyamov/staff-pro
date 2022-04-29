@@ -1,0 +1,135 @@
+@import "../colors";
+
+.root {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	z-index: 9999;
+	background: rgba(#000, 0.2);
+	backdrop-filter: blur(15px);
+	animation: fadeIn 200ms linear forwards;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.panel {
+	background: $white;
+	border-radius: 8px;
+	min-width: 500px;
+	animation: fadeInDown 200ms linear forwards;
+	position: relative;
+}
+
+.check {
+	width: 80px;
+	height: 80px;
+	border-radius: 80px;
+	background: $light-grayish-blue;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	margin: 0 auto 20px auto;
+}
+
+.title {
+	font-size: 1.75rem;
+	font-weight: 800;
+	line-height: 38px;
+	text-align: center;
+}
+
+.subtitle {
+	font-size: 1rem;
+	margin-top: 8px;
+	text-align: center;
+	color: $gray;
+	font-weight: 500;
+	line-height: 125%;
+}
+
+.buttonGroup {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	gap: 24px;
+	margin-top: 32px;
+}
+
+.closeButtonWrap {
+	position: absolute;
+	top: 20px;
+	right: 20px;
+}
+
+.closeButton {
+	width: 30px;
+	height: 30px;
+	border-radius: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+}
+
+.__close {
+	animation: fadeOut 200ms linear forwards;
+	.panel {
+		animation: fadeOutDown 200ms linear forwards;
+	}
+}
+
+.__size__medium {
+	.panel {
+		padding: 50px 80px;
+	}
+}
+
+.__size__small {
+	.panel {
+		padding: 50px 40px;
+	}
+}
+
+@keyframes fadeIn {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+@keyframes fadeInDown {
+	from {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	to {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+@keyframes fadeOutDown {
+	from {
+		opacity: 1;
+		transform: translateY(0);
+	}
+	to {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+}
+
+@keyframes fadeOut {
+	to {
+		opacity: 0;
+	}
+}

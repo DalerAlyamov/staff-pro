@@ -32,10 +32,10 @@ const app = Object.freeze(
     employees: "/employees",
 
     // отпускная (создание/редактирование/просмотр)
-    holiday: "/holidays/",
+    vacation: "/vacations/",
 
     // список отпусков
-    holidays: "/holidays",
+    vacations: "/vacations",
 
     // личный кабинет
     home: "/",

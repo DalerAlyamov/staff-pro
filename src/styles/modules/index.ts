@@ -6,6 +6,10 @@ import radioButton from "./radioButton.module.scss";
 import radio from "./radio.module.scss";
 import navigation from "./navigation.module.scss";
 import notifications from "./notifications.module.scss";
+import logotype from "./logotype.module.scss";
+import header from "./header.module.scss";
+import modal from "./modal.module.scss";
+import input from "./input.module.scss";
 
 const styles = Object.freeze(
   Object.seal({
@@ -16,7 +20,11 @@ const styles = Object.freeze(
     radioButton,
     radio,
     navigation,
-    notifications
+    notifications,
+    logotype,
+    header, 
+    modal,
+    input
   })
 );
 

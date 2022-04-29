@@ -66,11 +66,11 @@ const Routes: React.FC = () => {
           </Route>
 
           {/* 7. список отпусков | 8. отпускная (создание/редактирование/просмотр) */}
-          <Route path={constants.routes.app.holidays}>
-            <Route index element={<RouteList.App.Holidays />} />
+          <Route path={constants.routes.app.vacations}>
+            <Route index element={<RouteList.App.vacations />} />
             <Route
-              path={constants.routes.app.holiday + ":id"}
-              element={<RouteList.App.Holiday />}
+              path={constants.routes.app.vacation + ":id"}
+              element={<RouteList.App.vacation />}
             />
           </Route>
 

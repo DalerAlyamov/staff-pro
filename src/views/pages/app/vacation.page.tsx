@@ -2,10 +2,10 @@ import React from "react";
 import Component from "@components";
 import constants from "@constants";
 
-export const Holidays: React.FC = (): JSX.Element => {
+export const vacation: React.FC = (): JSX.Element => {
   return (
     <Component.Page
-      title={constants.pageNames.app.holidays}
+      title={constants.pageNames.app.vacation('Отдельная страница для отпуска')}
     ></Component.Page>
   );
 };

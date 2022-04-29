@@ -41,12 +41,12 @@ const Employees = React.lazy(() =>
   import("@pages").then(({ Employees }) => ({ default: Employees }))
 );
 
-const Holiday = React.lazy(() =>
-  import("@pages").then(({ Holiday }) => ({ default: Holiday }))
+const vacation = React.lazy(() =>
+  import("@pages").then(({ vacation }) => ({ default: vacation }))
 );
 
-const Holidays = React.lazy(() =>
-  import("@pages").then(({ Holidays }) => ({ default: Holidays }))
+const vacations = React.lazy(() =>
+  import("@pages").then(({ vacations }) => ({ default: vacations }))
 );
 
 const Home = React.lazy(() =>
@@ -72,8 +72,8 @@ const App = Object.freeze(
     BusinessTrips,
     Employee,
     Employees,
-    Holiday,
-    Holidays,
+    vacation,
+    vacations,
     Home,
     MyApplications,
     Notifications,

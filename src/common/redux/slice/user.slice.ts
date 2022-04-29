@@ -1,31 +1,19 @@
 import * as i from "@interfaces";
 import { createSlice, PayloadAction } from "@reduxjs/toolkit";
 
-const initialState: i.User = {
-  id: undefined,
-  name: undefined,
-  email: undefined,
-  rank: undefined,
-  type: undefined,
+const initialState: i.UserSlice = {
+  data: undefined
 };
 
 const userSlice = createSlice({
   name: "userSlice",
   initialState,
   reducers: {
-    initUser(state: i.User, { payload }: PayloadAction<i.User>) {
-      state.id = payload.id;
-      state.name = payload.name;
-      state.email = payload.email;
-      state.rank = payload.rank;
-      state.type = payload.type;
+    initUser(state: i.UserSlice, { payload }: PayloadAction<i.UserData>) {
+      state.data = payload;
     },
-    deInitUser(state: i.User) {
-      state.id = undefined;
-      state.name = undefined;
-      state.email = undefined;
-      state.rank = undefined;
-      state.type = undefined;
+    deInitUser(state: i.UserSlice) {
+      state.data = undefined;
     },
   },
 });
