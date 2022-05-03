@@ -1,0 +1,27 @@
+@import '../colors';
+
+.root {
+	height: 52px;
+	width: 280px;
+	border: 2px solid transparent;
+	background: $light-grayish-blue;
+	font-size: 1.125rem;
+	font-weight: 500;
+	color: $dark-blue;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	padding: 0 16px;
+	border-radius: 8px;
+	cursor: pointer;
+}
+
+.input {
+	display: none;
+}
+
+.__disabled {	
+	color: rgba($dark-blue, 0.4);
+	cursor: not-allowed;
+	user-select: none;
+}

@@ -11,6 +11,7 @@
   text-decoration: none;
   list-style: none;
   font-family: "Inter", sans-serif;
+  box-sizing: border-box;
 
   ::-webkit-scrollbar {
     width: 5px;
@@ -167,4 +168,6 @@ button * {
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
+  gap: 20px;
 }

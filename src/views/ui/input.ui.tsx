@@ -9,6 +9,7 @@ interface IProps {
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
   placeholder?: string;
   className?: string;
+  disabled?: boolean;
   isPassword?: boolean;
   hasEyeIcon?: boolean;
 }
@@ -21,7 +22,7 @@ const Input: React.FC<IProps> = (props): JSX.Element => {
   const className = classNames(
     props.className,
     styles.input.root,
-    isActive && styles.input.__active,
+    (isActive || props.value.trim() !== "") && styles.input.__active,
     props.hasEyeIcon && styles.input.__hasEye,
   );
 
@@ -30,17 +31,26 @@ const Input: React.FC<IProps> = (props): JSX.Element => {
       <div className={styles.input.placeholder}>
         {props.placeholder}
       </div>
-      <input 
-        type={props.isPassword && !isVisible ? "password" : "text"}
-        value={props.value}
-        onChange={props.onChange}
-        onFocus={() => setActive(true)}
-        onBlur={() => {
-          if (props.value.trim().length === 0) 
-            setActive(false)
-        }}
-        className={styles.input.input}
-      />
+      <Component.If 
+        condition={!props.disabled}
+        anotherChildren={
+          <div className={styles.input.disabled_input}>
+            {props.value}
+          </div>
+        }
+      >
+        <input 
+          type={props.isPassword && !isVisible ? "password" : "text"}
+          value={props.value}
+          onChange={props.onChange}
+          onFocus={() => setActive(true)}
+          onBlur={() => {
+            if (props.value.trim().length === 0) 
+              setActive(false)
+          }}
+          className={styles.input.input}
+        />
+      </Component.If>
       <Component.If condition={props.hasEyeIcon}>
         <button className={styles.input.eye} onClick={() => setVisible(prev => !prev)}>
           <Component.If 

@@ -3,19 +3,31 @@
 .root {
 	position: relative;
 	height: 52px;
-	width: 428px;
+	width: 100%;
 }
 
-.input {
+.input, .disabled_input {
 	background: $light-grayish-blue;
 	height: 100%;
 	width: 100%;
 	color: $dark-blue;
 	font-size: 1.125rem;
 	font-weight: 500;
-	line-height: 125%;
-	padding: 25px 16px 16px 16px;
 	border-radius: 8px;
+	padding: 25px 16px 16px 16px;
+	overflow-x: auto;
+	resize: none;
+	border: 2px solid transparent;
+	transition: 100ms linear;
+	&:focus {
+		border-color: $dark-blue;
+	}
+}
+
+.disabled_input {
+	display: flex;
+	align-items: center;
+	color: rgba($gray, 0.7);
 }
 
 .placeholder {

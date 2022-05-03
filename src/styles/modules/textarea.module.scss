@@ -1,0 +1,30 @@
+@import '../colors';
+
+.root {
+	position: relative;
+	width: 428px;
+	min-height: 144px;
+}
+
+.textarea, .disabled_textarea {
+	background: $light-grayish-blue;
+	width: 100%;
+	color: $dark-blue;
+	font-size: 1.125rem;
+	font-weight: 500;
+	border-radius: 8px;
+	padding: 20px 16px 7px 16px;
+	resize: none;
+	border: 2px solid transparent;
+	transition: 100ms linear;
+	line-height: 125%;
+	&:focus {
+		border-color: $dark-blue;
+	}
+}
+
+.disabled_textarea {
+	display: flex;
+	align-items: center;
+	color: rgba($gray, 0.7);
+}

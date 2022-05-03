@@ -9,6 +9,9 @@ import Logotype from './logotype.ui';
 import Header from './header.ui';
 import Navigation from './navigation.ui';
 import Input from './input.ui';
+import TextArea from './textarea.ui';
+import FileInput from './fileinput.ui';
+import Select from './select.ui';
 
 const UI = Object.freeze(
 	Object.seal({
@@ -22,7 +25,10 @@ const UI = Object.freeze(
 		Logotype,
 		Header,
 		Navigation,
-		Input
+		Input,
+		TextArea,
+		FileInput,
+		Select
 	})
 )
 

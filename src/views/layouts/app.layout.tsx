@@ -1,24 +1,31 @@
 import React from "react";
 import { Outlet } from "react-router-dom";
 import UI from "@ui";
-import { useAppDispatch } from "@redux";
-import actions from "@redux/slice";
-import constants from "@constants";
+import Component from '@components';
 
 const AppLayout: React.FC = (): JSX.Element => {
-  const dispatch = useAppDispatch();
+  const [selectedType, setType] = React.useState<string>("Старший инженер");  
+  const [list, setList] = React.useState<string[]>([
+    "Старший инженер",
+    "Логистики",
+    "Программист",
+    "Менеджер по закупкам",
+    "Строитель"
+  ]);  
 
   return (
     <>
       <div className="testtest">
-        <UI.Button 
-          type="contained" 
-          onClick={() => dispatch(actions.modal.openModal({
-            key: constants.modalKeys.selectApplicationType
-          }))}
-        >
-          Открыть модальное окно
-        </UI.Button>
+        <Component.WidthLimiter width={350}>
+          <UI.Select
+            id={1}
+            legend="Отдел"
+            list={list}
+            value={selectedType}
+            onChange={setType}
+            searchPlaceholder="Поиск по должностям"
+          />
+        </Component.WidthLimiter>
       </div>
       <Outlet />
     </>

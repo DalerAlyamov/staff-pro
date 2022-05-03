@@ -5,6 +5,7 @@ import Loading from "./loading.component";
 import ModalContainer from "./modalContainer.component";
 import Page from "./page.component";
 import Skeleton from "./skeleton.component";
+import WidthLimiter from "./widthLimiter.component";
 
 const Component = Object.freeze(
   Object.seal({
@@ -15,6 +16,7 @@ const Component = Object.freeze(
     ModalContainer,
     Page,
     Skeleton,
+    WidthLimiter
   })
 );
 

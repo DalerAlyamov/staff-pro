@@ -10,6 +10,9 @@ import logotype from "./logotype.module.scss";
 import header from "./header.module.scss";
 import modal from "./modal.module.scss";
 import input from "./input.module.scss";
+import textarea from "./textarea.module.scss";
+import fileInput from "./fileInput.module.scss";
+import select from "./select.module.scss";
 
 const styles = Object.freeze(
   Object.seal({
@@ -24,7 +27,10 @@ const styles = Object.freeze(
     logotype,
     header, 
     modal,
-    input
+    input,
+    textarea,
+    fileInput,
+    select
   })
 );
 
