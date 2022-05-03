@@ -1,0 +1,1 @@
+export type HouseTypesList = "Отель" | "Съёмная квартира";
