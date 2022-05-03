@@ -12,6 +12,7 @@ import Input from './input.ui';
 import TextArea from './textarea.ui';
 import FileInput from './fileinput.ui';
 import Select from './select.ui';
+import SelectCurrency from './selectCurrency.ui';
 
 const UI = Object.freeze(
 	Object.seal({
@@ -28,7 +29,8 @@ const UI = Object.freeze(
 		Input,
 		TextArea,
 		FileInput,
-		Select
+		Select,
+		SelectCurrency
 	})
 )
 

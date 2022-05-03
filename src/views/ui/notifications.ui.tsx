@@ -64,7 +64,12 @@ const Notifications: React.FC = (): JSX.Element => {
           {notifications.map((notification) => {
             const routeWhenClick = notification.type === 1 ? constants.routes.app.businessTrip : constants.routes.app.vacation;
             return (
-              <Component.Link key={notification.id} to={routeWhenClick+notification.application_id} className={styles.notifications.item}>
+              <Component.Link 
+                key={notification.id} 
+                to={routeWhenClick+notification.application_id} 
+                className={styles.notifications.item}
+                onClick={() => setOpen(false)}
+              >
                 <div className={styles.notifications.item__titleLeft}>
                   <span>
                     {translator.applicationType.idToName[notification.type]}

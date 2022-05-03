@@ -8,7 +8,7 @@ import constants from '@constants';
 
 interface IProps {}
 
-const Header: React.FC<IProps> = (props): JSX.Element => {
+const Header: React.FC<IProps> = (): JSX.Element => {
   const className = classNames("container", styles.header.root);
 
   return (
@@ -24,7 +24,7 @@ const Header: React.FC<IProps> = (props): JSX.Element => {
   );
 };
 
-const Profile: React.FC = (props): JSX.Element => {
+const Profile: React.FC = (): JSX.Element => {
 	// вернуться
   // const user = useAppSelector((state) => state.user);
 

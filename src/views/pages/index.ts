@@ -10,6 +10,7 @@ export * from "@pages/app/vacations.page";
 export * from "@pages/app/home.page";
 export * from "@pages/app/myApplications.page";
 export * from "@pages/app/notifications.page";
+export * from "@pages/app/templates.page";
 
 /******************** auth ********************/
 

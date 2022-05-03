@@ -67,10 +67,10 @@ const Routes: React.FC = () => {
 
           {/* 7. список отпусков | 8. отпускная (создание/редактирование/просмотр) */}
           <Route path={constants.routes.app.vacations}>
-            <Route index element={<RouteList.App.vacations />} />
+            <Route index element={<RouteList.App.Vacations />} />
             <Route
               path={constants.routes.app.vacation + ":id"}
-              element={<RouteList.App.vacation />}
+              element={<RouteList.App.Vacation />}
             />
           </Route>
 
@@ -81,6 +81,12 @@ const Routes: React.FC = () => {
           <Route
             path={constants.routes.app.notifications}
             element={<RouteList.App.Notifications />}
+          />
+
+          {/* 10. список уведомлений */}
+          <Route
+            path={constants.routes.app.templates}
+            element={<RouteList.App.Templates />}
           />
 
           {/* 13. 404 в приложении */}

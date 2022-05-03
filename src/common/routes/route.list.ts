@@ -41,12 +41,12 @@ const Employees = React.lazy(() =>
   import("@pages").then(({ Employees }) => ({ default: Employees }))
 );
 
-const vacation = React.lazy(() =>
-  import("@pages").then(({ vacation }) => ({ default: vacation }))
+const Vacation = React.lazy(() =>
+  import("@pages").then(({ Vacation }) => ({ default: Vacation }))
 );
 
-const vacations = React.lazy(() =>
-  import("@pages").then(({ vacations }) => ({ default: vacations }))
+const Vacations = React.lazy(() =>
+  import("@pages").then(({ Vacations }) => ({ default: Vacations }))
 );
 
 const Home = React.lazy(() =>
@@ -55,6 +55,10 @@ const Home = React.lazy(() =>
 
 const Notifications = React.lazy(() =>
   import("@pages").then(({ Notifications }) => ({ default: Notifications }))
+);
+
+const Templates = React.lazy(() =>
+  import("@pages").then(({ Templates }) => ({ default: Templates }))
 );
 
 const Auth = Object.freeze(
@@ -72,11 +76,12 @@ const App = Object.freeze(
     BusinessTrips,
     Employee,
     Employees,
-    vacation,
-    vacations,
+    Vacation,
+    Vacations,
     Home,
     MyApplications,
     Notifications,
+    Templates
   })
 );
 
