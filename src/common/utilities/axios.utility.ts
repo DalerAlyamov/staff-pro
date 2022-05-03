@@ -52,4 +52,7 @@ const put = (url: string, body?: any) =>
 const del = (url: string, id?: string) =>
   instance.delete(`${url}/${id}`).then(responseBody);
 
-export { get, post, put, del };
+const patch = (url: string) =>
+  instance.delete(url).then(responseBody);
+
+export { get, post, put, del, patch };
