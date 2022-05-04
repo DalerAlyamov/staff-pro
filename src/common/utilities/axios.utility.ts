@@ -49,8 +49,8 @@ const post = (url: string, body?: any) =>
 const put = (url: string, body?: any) =>
   instance.put(`${url}`, body).then(responseBody);
 
-const del = (url: string, id?: string) =>
-  instance.delete(`${url}/${id}`).then(responseBody);
+const del = (url: string) =>
+  instance.delete(url).then(responseBody);
 
 const patch = (url: string) =>
   instance.delete(url).then(responseBody);
