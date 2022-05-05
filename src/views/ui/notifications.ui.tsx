@@ -3,7 +3,6 @@ import { translator } from "@functions";
 import styles from "@styles/modules";
 import Icon from "@icons";
 import Component from "@components";
-import { RippleEffect } from "daler-react-ripple-effect";
 import constants from '@constants';
 
 interface INotification {

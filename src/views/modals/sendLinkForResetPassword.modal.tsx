@@ -52,7 +52,7 @@ const SendLinkForResetPassword: React.FC = (): JSX.Element => {
           <Icon.Check size={40} />
         </div>
 
-        <div className={styles.modal.title}>Новый пароль отправлен</div>
+        <div className={styles.modal.title}>Ссылка на изменение пароля<br />отправлена вам на почту</div>
       </div>
     </div>
   );
