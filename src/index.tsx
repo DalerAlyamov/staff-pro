@@ -8,6 +8,7 @@ import { store } from "@redux";
 import { CustomRouter } from "@utilities/customRouter.utility";
 
 import "@styles/global.scss";
+import "react-toastify/dist/ReactToastify.css";
 
 const app = (
   <Provider store={store}>

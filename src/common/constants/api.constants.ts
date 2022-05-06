@@ -18,7 +18,7 @@ const auth = Object.freeze(
     checkResetPasswordToken: "/api/auth/check-reset-password-token",
     changePassword: "/api/auth/change-password",
     retryToken: "/api/auth/retry-token",
-    checkAccessToken: "/api/auth/check-access_token",
+    checkAccessToken: "/api/auth/check-access-token",
   })
 );
 

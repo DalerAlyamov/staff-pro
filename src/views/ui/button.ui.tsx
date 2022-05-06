@@ -6,6 +6,7 @@ import Component from "@components";
 
 interface IProps {
   children: React.ReactNode;
+  isSubmit?: boolean;
   type?: "outlined" | "contained";
   disabled?: boolean;
   color?: string | undefined;
@@ -40,6 +41,7 @@ const Button: React.FC<IProps> = (props): JSX.Element => {
       anotherChildren={<div className={className}>{props.children}</div>}
     >
       <button
+        type={props.isSubmit ? 'submit' : 'button'}
         onMouseDown={props.onMouseDown}
         onMouseUp={props.onMouseUp}
         onMouseLeave={props.onMouseLeave}

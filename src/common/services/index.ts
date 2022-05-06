@@ -1,8 +1,8 @@
-import template from "./template.services";
+import auth from "./auth.services";
 
 const services = Object.freeze(
   Object.seal({
-    template,
+    auth,
   })
 );
 

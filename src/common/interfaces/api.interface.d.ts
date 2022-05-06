@@ -1,6 +1,12 @@
-// Api_Группа_Имя_Данные 
-
 import { HouseTypesList } from './houseTypes';
+
+export interface Response {
+	status_code: number;
+	message: string;
+	payload: any;
+}
+
+// Api_Группа_Имя_Данные 
 
 /* Auth */
 

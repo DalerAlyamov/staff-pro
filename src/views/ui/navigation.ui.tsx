@@ -12,7 +12,7 @@ const Navigation: React.FC = (): JSX.Element => {
   const [navigationList, setNavigationList] = React.useState<i.Navigation[]>([]);
 
   React.useEffect(() => {
-    switch("BUYER") {
+    switch(user.data?.type) {
       case constants.userTypeList.employee:
         setNavigationList(constants.navigationList.employeeList);
         break;

@@ -1,5 +1,4 @@
 import React from "react";
-import classNames from 'classnames';
 import styles from '@styles/modules';
 import UI from '@ui';
 
@@ -25,7 +24,7 @@ const CheckboxButton: React.FC<IProps> = (props): JSX.Element => {
   }, [props.checked]);
 
   return (
-    <button className={styles.checkboxButton.root} onClick={handleClick}>
+    <button type="button" className={styles.checkboxButton.root} onClick={handleClick}>
       
       <UI.Checkbox checked={checked} />
 

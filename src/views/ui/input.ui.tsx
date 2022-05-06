@@ -7,6 +7,7 @@ import Icon from '@icons';
 interface IProps {
   value: string;
   onChange: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  onChangeVisibility?: () => void;
   placeholder?: string;
   className?: string;
   disabled?: boolean;
@@ -52,7 +53,13 @@ const Input: React.FC<IProps> = (props): JSX.Element => {
         />
       </Component.If>
       <Component.If condition={props.hasEyeIcon}>
-        <button className={styles.input.eye} onClick={() => setVisible(prev => !prev)}>
+        <div 
+          className={styles.input.eye} 
+          onClick={() => {
+            props.onChangeVisibility?.();
+            setVisible(prev => !prev)
+          }}
+        >
           <Component.If 
             condition={isVisible}
             anotherChildren={
@@ -61,7 +68,7 @@ const Input: React.FC<IProps> = (props): JSX.Element => {
           >
             <Icon.Visibility size={24} />
           </Component.If>
-        </button>
+        </div>
       </Component.If>
     </div>
   );

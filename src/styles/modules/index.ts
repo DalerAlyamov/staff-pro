@@ -14,6 +14,7 @@ import textarea from "./textarea.module.scss";
 import fileInput from "./fileInput.module.scss";
 import select from "./select.module.scss";
 import selectCurrency from "./selectCurrency.module.scss";
+import auth from "./auth.module.scss";
 
 const styles = Object.freeze(
   Object.seal({
@@ -32,7 +33,8 @@ const styles = Object.freeze(
     textarea,
     fileInput,
     select,
-    selectCurrency
+    selectCurrency,
+    auth
   })
 );
 

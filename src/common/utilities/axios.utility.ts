@@ -1,7 +1,7 @@
-import Cookie from "js-cookie";
+import Cookies from "js-cookie";
 import axios, { AxiosError, AxiosResponse, AxiosRequestConfig } from "axios";
 import { baseURL } from "@utilities/baseUrl.utility";
-import { LSTokenName } from "@utilities/locastorage.utility";
+import { LSAccessTokenName } from "@utilities/locastorage.utility";
 import { upperToLowerCase } from "@functions";
 
 const instance = axios.create({
@@ -13,7 +13,7 @@ const instance = axios.create({
 });
 
 instance.interceptors.request.use((config: AxiosRequestConfig) => {
-  const token: string | null = Cookie.get(LSTokenName) || null;
+  const token: string | null = Cookies.get(LSAccessTokenName) || null;
 
   const newConfig: { [k: string]: any } = { ...config };
 
@@ -33,11 +33,10 @@ instance.interceptors.response.use(
 
 const responseBody = (response: AxiosResponse): any => {
   const responseData = response.data;
-  const responseHeaders = response.headers;
-  if (responseData.statusCode === 401 || responseData.statusCode === 403) {
-    Cookie.remove(LSTokenName);
+  if (responseData.status_code === 401 || responseData.status_code === 403) {
+    Cookies.remove(LSAccessTokenName);
   }
-  return { responseData, responseHeaders };
+  return responseData;
 };
 
 const get = (url: string, params?: string | any) =>
